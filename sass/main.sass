@@ -1,0 +1,383 @@
+$orange_color: #ff9a03 
+
+*, *::before,*::after
+    box-sizing: border-box
+    padding: 0
+    margin: 0
+
+html 
+    scroll-behavior: smooth
+
+body 
+    position: relative
+    font-family: 'Montserrat', sans-serif
+    background-color: #333
+
+.orange-text 
+    color: $orange_color
+
+.wrapper
+    margin: 0 auto
+    width: 80%
+    max-width: 2560px
+
+    h2 
+        text-transform: uppercase
+        text-align: center
+
+.underline
+    margin: 0 auto 40px
+    width: 60px
+    height: 4px
+    background-color: $orange-color
+
+.scroll-fix::before
+    display: block
+    margin-top: -56px
+    height: 56px
+    content: ''
+
+.visibility
+    visibility: hidden
+
+.jumbotron
+    margin: 0
+
+// NAWIGACJA
+nav
+    text-transform: uppercase
+    transition: background-color .6s
+
+    a,i 
+        color: #fff
+        transition: color .3s
+
+    a:hover 
+        color: $orange_color
+    
+    .navbar-brand
+        font-weight: bold
+
+    .active
+        color: $orange_color
+
+.shadow-bg
+    background-color: rgba(0,0,0, .8)
+    
+// HEADER   
+header
+    color: white
+    overflow: hidden
+
+    h1 
+        padding: 15px
+        text-transform: uppercase
+        font-size: 30px
+
+    .hero-img
+        position: relative
+        z-index: 0
+        height: 100vh
+        background-image: url('../img/mushroom-small.jpg')
+        background-position: center
+        background-size: cover
+        background-attachment: fixed
+
+    .hero-shadow
+        z-index: -10
+        position: absolute
+        width: 100%
+        height: 100%
+        background-color: rgba(0,0,0,.8)
+
+    .hero-text
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+        height: 100%
+        text-align: center
+
+        p 
+            padding: 20px
+            font-size: 14px
+
+    .btn-outline-light
+        text-transform: uppercase
+    
+    .fa-chevron-down
+        display: none
+
+//  MAIN
+#aboutus
+    i 
+        margin-top: 20px
+        font-size: 30px
+
+    h3 
+        text-transform: uppercase
+        font-size: 18px
+
+    p
+        font-size: 14px
+
+    .aboutus-hover
+        transition: color .3s
+
+    .aboutus-hover:hover
+        color: $orange_color
+
+#aboutus-hero
+    color: #ddd
+    overflow: hidden
+    .jumbotron
+        z-index: 0
+        position: relative
+        padding: 50px 0
+        background-image: url('../img/processor-small.jpg')
+        background-position: center
+        background-size: cover
+        background-attachment: fixed
+        
+    h2
+        font-size: 32px
+
+    i 
+        font-size: 35px
+
+    p
+        font-size: 14px
+
+    .about-shadow
+        z-index: -10
+        position: absolute
+        top: 0
+        width: 100%
+        height: 100%
+        background-color: rgba(0,0,0,.6)
+
+    .about-hero-item
+        margin: 10px 0
+
+// PORTFOLIO
+
+#portfolio
+    h2 
+        text-align: center
+        text-transform: uppercase
+    
+// CENNY
+#prices
+    h2
+        text-align: center
+        text-transform: uppercase
+
+    .jumbotron
+        background-color: #f9f9f9
+
+    .price-wrap
+        margin: 0 auto
+        width: 95%
+        max-width: 2560px
+
+    .price-box
+        margin: 20px
+        padding: 30px
+        background-color: #fff
+        box-shadow: 5px 5px 5px rgba(0,0,0,.6)
+        transition: transform .3s
+
+        h3 
+            color: $orange_color
+            text-transform: uppercase
+
+        span 
+            font-weight: bold
+
+        i 
+            padding: 0 5px
+            font-size: 23px
+
+        button
+            padding: 10px 20px
+            text-transform: uppercase
+        
+        .price
+            font-size: 30px
+            font-weight: bold
+
+    .price-box:hover
+        transform: scale(1.05)
+    
+    .price-text
+        margin-top: 30px
+
+// ZESPÓŁ / TEAM
+#team
+    .jumbotron
+        z-index: 0
+        position: relative
+        background-image: url('../img/team/room-large.jpg')
+        background-attachment: fixed
+        background-size: cover
+        
+        h2
+            text-align: center
+            text-transform: uppercase
+            color: #ddd
+
+    .team-shadow
+        position: absolute
+        top: 0
+        width: 100%
+        height: 100%
+        background-color: rgba(0,0,0,.7)
+
+    .card
+        transition: transform .3s
+
+        img 
+            height: 300px
+            object-fit: cover  // obiekt w tagu img w tym przypadku zdjęcie ma wypełnic i się dopasować do rodzica
+
+        i 
+            padding: 10px 20px
+            color: $orange_color
+
+        .row
+            margin-left: 0
+            margin-right: 0
+
+    .card:hover
+        transform: scale(.96)   
+
+    .card-body
+        height: 150px
+
+    .card-title
+        text-transform: uppercase
+        font-weight: bold
+        text-align: center
+
+    .card-text
+        font-size: 14px
+
+#achievements
+    h2 
+        text-transform: uppercase
+        text-align: center
+
+    .achievment
+        text-align: center
+
+    .achievment-list
+        padding: 20px 0
+
+    i 
+        padding: 10px
+        font-size: 48px
+        color: #ffffff
+        text-shadow: 0 0 5px black
+
+    .achievment-number
+        font-size: 22px
+
+    .achievment-text
+        font-size: 13px
+        text-transform: uppercase
+
+// KONTAKT
+#contact
+    .jumbotron
+        z-index: 0
+        position: relative
+        background-image: url('../img/city-large.jpg')
+        background-position: bottom
+        background-attachment: fixed
+        block-size: cover
+
+        h2
+            text-transform: uppercase
+            text-align: center
+            color: #ffffff
+            font-weight: bold
+
+        .underline
+            background-color: #ccc
+
+    .contact-shadow
+        z-index: -10
+        position: absolute
+        top: 0
+        width: 100%
+        height: 100%
+        background-color: #241600bf
+
+    .contact-us
+        display: flex
+        align-items: center
+        color: #ffffff
+
+        .contact-item
+            margin: 30px 0
+
+            h3 
+                text-transform: uppercase
+                margin: 30px 0
+                letter-spacing: 2px
+            
+            .social-media
+                font-size: 26px
+
+            a 
+                padding: 10px
+                color: $orange_color
+                text-shadow:  0 0 5px black
+                transition: color .3s
+
+            a:hover 
+                color: rgb(187, 106, 0)
+
+footer
+    color: black
+    background-color: $orange_color
+
+    p 
+        margin: 0
+        padding: 20px
+        text-align: center
+                
+
+@media (min-width: 375px)
+    header
+        h1
+            font-size: 36px
+
+        .hero-text
+            p 
+                font-size: 16px
+
+    #aboutus-hero
+        .jumbotron            
+            h2
+                font-size: 36px
+
+            h3 
+                font-size: 32px
+
+            p
+                font-size: 18px
+
+    #team
+        .card-text
+            font-size: 14px
+
+@media (min-width: 414px)
+    #aboutus-hero
+        .jumbotron            
+            padding: 80px 0
+
+@media (min-width: 500px)
+    #team
+        .card-body           
+            height: 120px

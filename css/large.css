@@ -1,0 +1,75 @@
+header .fa-chevron-down {
+  display: block;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-size: 30px;
+  -webkit-animation: bounce 1.6s infinite;
+          animation: bounce 1.6s infinite;
+  color: #fff;
+}
+
+#portfolio .carousel-item {
+  position: relative;
+  height: 500px;
+}
+
+#portfolio .carousel-item img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#portfolio .carousel-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 40px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+#portfolio .carousel-indicators {
+  padding-bottom: 20px;
+}
+
+#prices .price-wrap {
+  width: 80%;
+}
+
+@media (min-width: 1200px) {
+  #aboutus-hero .jumbotron {
+    padding: 100px 0;
+  }
+  #prices .price-wrap {
+    width: 85%;
+  }
+  #team .card-text {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1400px) {
+  #aboutus-hero .jumbotron {
+    padding: 120px 0;
+  }
+}
+
+@media (min-width: 1800px) {
+  #team .card-text {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 2000px) {
+  #aboutus-hero .jumbotron {
+    padding: 120px 0;
+  }
+  #prices .price-wrap {
+    width: 70%;
+  }
+}
+/*# sourceMappingURL=large.css.map */

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AACI,UADM,CACN,WAAW,CAAC;EACR,SAAS,EAAE,KAAK;CAAG;;AAF3B,AAGI,UAHM,CAGN,UAAU,CAAC;EACP,SAAS,EAAE,KAAK;CAAG;;AAE3B,AACI,OADG,CACH,WAAW,CAAC;EACR,KAAK,EAAE,GAAG;CAAG",
+    "sources": [
+        "../sass/small.sass"
+    ],
+    "names": [],
+    "file": "small.css"
+}
